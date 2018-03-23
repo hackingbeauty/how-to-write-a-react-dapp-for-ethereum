@@ -1,0 +1,38 @@
+:local(.controlsStyles) {
+  #button-controls{
+    position: absolute;
+    bottom: -50px;
+    right: 0px;
+    width: 100%;
+  }
+
+  .btn {
+    float: right;
+  }
+}
+
+:local(.photoStyles) {
+
+  #image-container {
+    position: relative;
+    float: left;
+    height: 100%;
+    width: 360px;
+    margin-right: 30px;
+    text-align: center;
+
+    #image-preview {
+      height: 360px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+    }
+
+    img {
+      height: 100%;
+    }
+
+  }
+
+}

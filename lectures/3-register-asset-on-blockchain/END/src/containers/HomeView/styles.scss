@@ -1,0 +1,45 @@
+@import '../../containers/App/styles/variables';
+
+:local(.styles) {
+
+	#register-actions {
+		max-width: 350px;
+		margin: 0 auto;
+
+		.btn {
+			float: left;
+		}
+
+		a#reset {
+			position: relative;
+			top: 10px;
+			float: left;
+			margin-left: 20px;
+		}
+	}
+}
+
+:local(.modalStyles) {
+
+	.metamask-logo {
+		max-width: 200px;
+		float: left;
+		margin-right: 50px;
+	}
+
+	.modal-content {
+		position: relative;
+		padding: 0 40px 50px 40px;
+
+		.message{
+			p {
+				color: $black;
+				line-height: 1.5;
+				position: relative;
+				left: 10px;
+				font-weight: bold;
+			}
+		}
+	}
+
+}
