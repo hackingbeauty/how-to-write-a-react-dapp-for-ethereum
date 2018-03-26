@@ -90,9 +90,15 @@ class HomeView extends Component {
   }
 
   registerAsset=() => {
-    const { history, actions } = this.props
+    const { history, actions, provider } = this.props
     const { asset } = this.state
-    alert('Prompt user to install MetaMask if not installed!')
+
+    if (provider.web3Provider !== null) {
+      actions.asset.addAsset(asset)
+      history.push('/register?panel=1')
+    } else {
+      actions.ui.showModal({modalKey: 'install-metamask-modal'})
+    }
   }
 }
 
