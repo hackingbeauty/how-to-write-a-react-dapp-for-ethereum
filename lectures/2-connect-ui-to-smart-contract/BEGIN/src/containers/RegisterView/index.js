@@ -5,6 +5,7 @@ import { bindActionCreators }       from 'redux'
 import Photo                        from './components/Photo'
 import { Step, Stepper, StepLabel } from 'material-ui/Stepper'
 import CredentialsPanel             from './panels/CredentialsPanel'
+import GenerateHashPanel            from './panels/GenerateHashPanel'
 
 /* component styles */
 import { styles } from './styles.scss'
@@ -33,7 +34,7 @@ class RegisterView extends Component {
     case 1:
       return <CredentialsPanel />
     case 2:
-      // return <GenerateHashPanel />
+      return <GenerateHashPanel />
       break
     case 3:
       // return <RegisterAssetPanel />
