@@ -1,0 +1,22 @@
+:local(.formStyles) {
+
+}
+
+:local(.labelStyles) {
+  label {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: block;
+  }
+}
+
+:local(.inputStyles) {
+  input {
+    margin-bottom: 20px;
+    max-width: 500px;
+    width: 100%;
+    padding: 10px;
+    height: 10px;
+  }
+}
